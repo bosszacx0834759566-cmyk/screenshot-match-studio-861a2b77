@@ -172,6 +172,8 @@ body { font-family: var(--font-sans); background: var(--ink); -webkit-font-smoot
 @utility reveal { opacity: 0; transform: translateY(32px); transition: opacity 1s var(--ease-out), transform 1s var(--ease-out); &.in { opacity: 1; transform: none; } }
 @utility mask-line { display: block; overflow: hidden; padding-bottom: .12em; margin-bottom: -.12em; & > span { display: block; transform: translateY(105%); transition: transform 1.2s var(--ease-out); } &.in > span { transform: none; } }
 @utility mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+/* Larger mono label (unlayered, so it wins over the @utility above) */
+.mono-lg { font-size: clamp(15px, 1.4vw, 20px); letter-spacing: 0.14em; }
 
 .site-container { width: 100%; max-width: 1680px; margin-inline: auto; padding-inline: clamp(20px, 4vw, 64px); }
 .brand { font-family: var(--font-brand); letter-spacing: 0.18em; }

@@ -251,7 +251,7 @@ function Index() {
           <div className="mt-16 grid items-end gap-12 lg:grid-cols-12">
             <div className="reveal lg:col-span-3"><Logo className="h-28 w-28 sm:h-40 sm:w-40" /></div>
             <div className="lg:col-span-9">
-              <p className="mono reveal mb-6 text-ink/50">Founder &amp; CEO, GodHeimer Technologies</p>
+              <p className="mono mono-lg reveal mb-6 text-ink/50">Founder &amp; CEO, GodHeimer Technologies</p>
               <h2 className="display-lg"><Lines lines={["Natthakorn “Boss”", "Mueangsangsri"]} /></h2>
               <p className="body-copy reveal mt-8 max-w-xl text-ink/60">Building adaptive and resilient space-to-ground communication systems for the most demanding environments.</p>
             </div>
