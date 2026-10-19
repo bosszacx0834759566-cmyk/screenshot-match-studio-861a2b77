@@ -4,6 +4,8 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { ArrowDown, ArrowUpRight, Plus, X } from "lucide-react";
 import { Scramble } from "@/components/Scramble";
 import issVideo from "@/assets/iss-video.mp4.asset.json";
+import goddardImg from "@/assets/goddard.jpg.asset.json";
+import oppenheimerImg from "@/assets/oppenheimer.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,6 +34,7 @@ const nav: [string, string][] = [
   ["RobertCore", "robertcore"],
   ["Challenge", "challenge"],
   ["Adaptive", "adaptive"],
+  ["The Name", "the-name"],
   ["Leadership", "leadership"],
   ["Contact", "contact"],
 ];
