@@ -249,7 +249,7 @@ function Index() {
         <div className="site-container">
           <Head n="05" title="Founder & Leadership" />
           <div className="mt-16 grid items-end gap-12 lg:grid-cols-12">
-            <div className="reveal lg:col-span-3"><Logo className="h-40 w-40 sm:h-64 sm:w-64" /></div>
+            <div className="reveal flex items-end lg:col-span-3 lg:self-stretch"><Logo className="h-40 w-40 sm:h-64 sm:w-64 lg:h-full lg:w-auto lg:max-w-full" /></div>
             <div className="lg:col-span-9">
               <p className="mono mono-lg reveal mb-6 text-ink/50">Founder &amp; CEO, GodHeimer Technologies</p>
               <h2 className="display-lg"><Lines lines={["Natthakorn “Boss”", "Mueangsangsri"]} /></h2>
