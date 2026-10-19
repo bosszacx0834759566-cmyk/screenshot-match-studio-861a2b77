@@ -176,7 +176,7 @@ function Index() {
               <h2 className="display-xl"><Lines lines={["RobertCore."]} /></h2>
               <p className="display-md reveal mt-12 max-w-3xl text-paper/70">Space-to-ground communication infrastructure that keeps data moving through changing — and often hostile — atmospheric conditions.</p>
             </div>
-            <div className="reveal flex items-end justify-end lg:col-span-4"><Logo className="h-48 w-48 text-paper sm:h-72 sm:w-72" /></div>
+            <div className="reveal flex items-end justify-end lg:col-span-4"><Logo className="h-48 w-48 text-paper sm:h-72 sm:w-72 lg:h-full lg:w-auto lg:max-w-full" /></div>
           </div>
           <div className="mt-24 grid grid-cols-2 border-t border-line-dark md:grid-cols-4">
             {[[99, "%", "Link availability target"], [4, "", "Atmospheric threats modeled"], [3, "", "Adaptive stages"], [24, "/7", "Continuous operation"]].map(([n, s, l], i) => (
