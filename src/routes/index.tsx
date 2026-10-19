@@ -4,6 +4,8 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { ArrowDown, ArrowUpRight, Plus, X } from "lucide-react";
 import { Scramble } from "@/components/Scramble";
 import issVideo from "@/assets/iss-video.mp4.asset.json";
+import goddardImg from "@/assets/goddard.jpg.asset.json";
+import oppenheimerImg from "@/assets/oppenheimer.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,6 +34,7 @@ const nav: [string, string][] = [
   ["RobertCore", "robertcore"],
   ["Challenge", "challenge"],
   ["Adaptive", "adaptive"],
+  ["The Name", "the-name"],
   ["Leadership", "leadership"],
   ["Contact", "contact"],
 ];
@@ -244,10 +247,46 @@ function Index() {
         </div>
       </section>
 
+      {/* THE NAME */}
+      <section id="the-name" className="section-space bg-ink text-paper">
+        <div className="site-container">
+          <Head n="05" title="The Name / Origin" dark />
+          <div className="mt-16 grid gap-12 lg:grid-cols-12">
+            <h2 className="display-xl lg:col-span-8"><Lines lines={["Two scientists.", <span className="hero-sub">One name.</span>]} /></h2>
+            <p className="body-copy reveal self-end text-paper/60 lg:col-span-4">GodHeimer carries the names of two physicists — one who reached for space, one who shaped modern defense. Both sides define what we build.</p>
+          </div>
+          <div className="mt-24 grid gap-10 md:grid-cols-2">
+            <figure className="founder-card reveal" style={{ transitionDelay: "0ms" }}>
+              <div className="founder-media"><img src={goddardImg.url} alt="Robert H. Goddard" loading="lazy" /></div>
+              <figcaption className="mt-8">
+                <div className="flex items-baseline justify-between gap-6">
+                  <span className="display-lg">GOD</span>
+                  <span className="mono text-paper/40">Space</span>
+                </div>
+                <p className="mono mono-lg mt-4 text-paper/70">Robert H. Goddard</p>
+                <p className="body-copy mt-4 max-w-md text-paper/60">Father of modern rocket propulsion. He launched the first liquid-fueled rocket in 1926 and proved spaceflight was possible — the space technology side of GodHeimer.</p>
+              </figcaption>
+            </figure>
+            <figure className="founder-card reveal" style={{ transitionDelay: "120ms" }}>
+              <div className="founder-media"><img src={oppenheimerImg.url} alt="J. Robert Oppenheimer" loading="lazy" /></div>
+              <figcaption className="mt-8">
+                <div className="flex items-baseline justify-between gap-6">
+                  <span className="display-lg">HEIMER</span>
+                  <span className="mono text-paper/40">Defense</span>
+                </div>
+                <p className="mono mono-lg mt-4 text-paper/70">J. Robert Oppenheimer</p>
+                <p className="body-copy mt-4 max-w-md text-paper/60">Theoretical physicist who led the Manhattan Project and founded the field of national defense science — the defense technology side of GodHeimer.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <p className="body-copy reveal mt-16 max-w-3xl text-paper/60">Our startup works at the intersection of space technology and defense technology — so the name reads as one word in English, <span className="font-semibold text-paper">GodHeimer</span>: God + Heimer.</p>
+        </div>
+      </section>
+
       {/* LEADERSHIP */}
       <section id="leadership" className="section-space border-t border-line-light bg-paper text-ink">
         <div className="site-container">
-          <Head n="05" title="Founder & Leadership" />
+          <Head n="06" title="Founder & Leadership" />
           <div className="mt-16 grid items-end gap-12 lg:grid-cols-12">
             <div className="reveal flex items-end lg:col-span-3 lg:self-stretch"><Logo className="h-40 w-40 sm:h-64 sm:w-64 lg:h-full lg:w-auto lg:max-w-full" /></div>
             <div className="lg:col-span-9">
@@ -262,7 +301,7 @@ function Index() {
       {/* CONTACT */}
       <footer id="contact" className="section-space bg-ink pb-10">
         <div className="site-container">
-          <Head n="06" title="Contact & Follow" dark />
+          <Head n="07" title="Contact & Follow" dark />
           <div className="mt-16 grid gap-16 lg:grid-cols-12">
             <div className="lg:col-span-8">
               <h2 className="display-xl"><Lines lines={["Get in touch."]} /></h2>
